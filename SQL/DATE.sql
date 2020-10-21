@@ -24,3 +24,6 @@ SELECT EXTRACT(year FROM LEFT_DATETIME)  FROM  EMPLOYEE
 union
 SELECT EXTRACT(month FROM LEFT_DATETIME)  FROM  EMPLOYEE;
 
+-- Lấy các giá trị trong 1 năm (2020)
+select * from EMPLOYEE
+where extract(year from LEFT_DATETIME) =2020;
