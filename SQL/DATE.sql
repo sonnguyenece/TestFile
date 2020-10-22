@@ -27,3 +27,10 @@ SELECT EXTRACT(month FROM LEFT_DATETIME)  FROM  EMPLOYEE;
 -- Lấy các giá trị trong 1 năm (2020)
 select * from EMPLOYEE
 where extract(year from LEFT_DATETIME) =2020;
+
+-- Lấy các giá trị với date trong giới hạn fromDate_toDate
+select * from EMPLOYEE
+where LEFT_DATETIME > to_date(:fromDate,'YY-MM-DD')
+and LEFT_DATETIME < to_date(:toDatw,'yy-mm-dd')
+
+
