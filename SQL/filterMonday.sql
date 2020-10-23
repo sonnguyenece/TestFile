@@ -1,5 +1,5 @@
 -- Tính value hàng tuần bắt đầu từ thứ 2 kết thúc vào chủ nhật
-
+create view filterMonday as
 WITH lASTEST_MONDAY AS (
     SELECT (CASE
                 WHEN (TO_CHAR(DAY, 'DY') = 'MON') THEN TO_CHAR(DAY, 'yyyy-mm-dd DY')
