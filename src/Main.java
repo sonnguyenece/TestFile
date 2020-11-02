@@ -23,6 +23,8 @@ public class Main {
                 .map(s -> s.split("="))
                 .collect(Collectors.toMap(s -> s[0].trim(), s -> s[1].trim()));
 
+        testContructor tc= new testContructor("son",25);
+
         System.out.println(hMapData);
     }
 }
