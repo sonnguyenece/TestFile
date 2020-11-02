@@ -1,9 +1,6 @@
-import java.util.Arrays;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
-public class StackTest {
+public class StackQueueTest {
     public static void main(String[] args) {
         Stack<String> stackTest=new Stack<>();
         stackTest.push("shit1");
@@ -15,7 +12,6 @@ public class StackTest {
         System.out.println(stackTest);
 
         Queue<String> pq = new PriorityQueue<>();
-
         pq.add("queue1");
         pq.add("queue2");
         pq.add("queue3");
@@ -29,5 +25,25 @@ public class StackTest {
         System.out.println(pq.peek());
         System.out.println(pq.poll());
         System.out.println(pq.element());
+
+//        List<String> lkl = new LinkedList<>();
+        LinkedList<String> lkl = new LinkedList<String>();
+        lkl.add("queue1");
+        lkl.add("queue2");
+        lkl.add("queue3");
+        lkl.add("queue4");
+        lkl.add("queue5");
+        lkl.add("queue6");
+        System.out.println(lkl);
+        System.out.println(lkl.peek());
+        lkl.poll();
+        System.out.println(lkl);
+        lkl.addFirst("queue1");
+        System.out.println(lkl);
+
+//        lkl.add("queue1");
+//        System.out.println(lkl.peek());
+//        System.out.println(lkl.poll());
+//        System.out.println(lkl);
     }
 }
