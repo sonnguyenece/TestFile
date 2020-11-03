@@ -7,9 +7,17 @@ public class Apple {
         this.color = color;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return 31+color.hashCode();
     }
 
     @Override
